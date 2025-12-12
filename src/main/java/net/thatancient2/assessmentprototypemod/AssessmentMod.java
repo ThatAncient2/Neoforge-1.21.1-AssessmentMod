@@ -6,6 +6,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.thatancient2.assessmentprototypemod.Config;
+import net.thatancient2.assessmentprototypemod.block.ModBlocks;
 import net.thatancient2.assessmentprototypemod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -52,6 +53,7 @@ public class AssessmentMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -69,6 +71,14 @@ public class AssessmentMod {
     if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
         event.accept(ModItems.LUNARCOIN);
         event.accept(ModItems.EGOCENTRISM);
+        event.accept(ModItems.UKELELE);
+        event.accept(ModItems.ATGMISSILEMKI);
+        event.accept(ModItems.NOXIOUSTHORN);
+        event.accept(ModItems.GESTUREOFTHEDROWNED);
+        event.accept(ModItems.POLYLUTE);
+        event.accept(ModItems.SHATTERINGJUSTICE);
+        event.accept(ModItems.IRRADIANTPEARL);
+        event.accept(ModItems.PLANULA);
     }
     }
 
