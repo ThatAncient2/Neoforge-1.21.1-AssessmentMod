@@ -7,6 +7,7 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.thatancient2.assessmentprototypemod.Config;
 import net.thatancient2.assessmentprototypemod.block.ModBlocks;
+import net.thatancient2.assessmentprototypemod.item.ModCreativeModeTabs;
 import net.thatancient2.assessmentprototypemod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -52,6 +53,8 @@ public class AssessmentMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -79,6 +82,9 @@ public class AssessmentMod {
         event.accept(ModItems.SHATTERINGJUSTICE);
         event.accept(ModItems.IRRADIANTPEARL);
         event.accept(ModItems.PLANULA);
+    }
+    if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+        event.accept(ModBlocks.SIMULACRUM_GROUND);
     }
     }
 

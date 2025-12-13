@@ -8,5 +8,10 @@
   "item.assessmentmod.irradiantpearl": "Irradiant Pearl",
   "item.assessmentmod.noxiousthorn": "Noxious Thorn",
   "item.assessmentmod.polylute": "Polylute",
-  "item.assessmentmod.shatteringjustice": "Shattering Justice"
+  "item.assessmentmod.shatteringjustice": "Shattering Justice",
+
+  "block.assessmentmod.simulacrum_ground": "Simulacrum Ground",
+
+  "creativetab.assessmentmod.assessment_items": "Assessment Items",
+  "creativetab.assessmentmod.assessment_blocks": "Assessment Blocks"
 }
