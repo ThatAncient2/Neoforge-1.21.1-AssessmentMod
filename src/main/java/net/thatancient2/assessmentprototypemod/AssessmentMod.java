@@ -82,6 +82,7 @@ public class AssessmentMod {
         event.accept(ModItems.SHATTERINGJUSTICE);
         event.accept(ModItems.IRRADIANTPEARL);
         event.accept(ModItems.PLANULA);
+        event.accept(ModItems.PLASMASHRIMP);
     }
     if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
         event.accept(ModBlocks.SIMULACRUM_GROUND);

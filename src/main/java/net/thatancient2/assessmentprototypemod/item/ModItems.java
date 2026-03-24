@@ -19,6 +19,7 @@ public class ModItems {
     public static final DeferredItem<Item> SHATTERINGJUSTICE = ITEMS.register("shatteringjustice", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IRRADIANTPEARL = ITEMS.register("irradiantpearl", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLANULA = ITEMS.register("planula", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLASMASHRIMP = ITEMS.register("plasmashrimp", () -> new Item(new Item.Properties()));
 
 
     public static void  register(IEventBus eventBus) {

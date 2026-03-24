@@ -31,6 +31,7 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.PLANULA);
                 output.accept(ModItems.POLYLUTE);
                 output.accept(ModItems.SHATTERINGJUSTICE);
+                output.accept(ModItems.PLASMASHRIMP);
             })
 
             //registering blocks tab

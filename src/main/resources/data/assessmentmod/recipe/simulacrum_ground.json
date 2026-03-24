@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "assessmentmod:simulacrum_ground"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "assessmentmod:simulacrum_ground"
+  }
+}
