@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "assessmentmod:ukelele"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "assesmentmod:ukelele"
+  }
+}
