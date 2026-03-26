@@ -10,12 +10,12 @@
       ],
       "entries": [
         {
-          "type": "minecraft_item",
+          "type": "minecraft:item",
           "name": "assessmentmod:simulacrum_ground"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "assessmentmod:blocks/simulacrum_ground"
+  "random_sequence": "assessmentmod:block/simulacrum_ground"
 }
