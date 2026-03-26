@@ -76,7 +76,7 @@
         {
           "type": "minecraft:item",
           "name": "assessmentmod:lunarcoin",
-          "weight": "5"
+          "weight": 5
         }
       ],
       "rolls": {
