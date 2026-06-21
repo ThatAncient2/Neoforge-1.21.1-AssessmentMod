@@ -82,7 +82,7 @@ public class GupEntity extends Mob implements Enemy {
     }
 
     static class GupFloatGoal extends Goal {
-        private final GupEntity gup;
+        protected final GupEntity gup;
 
         public GupFloatGoal(GupEntity gup) {
             this.gup = gup;
@@ -112,7 +112,7 @@ public class GupEntity extends Mob implements Enemy {
     }
 
     static class GupKeepOnJumpingGoal extends Goal {
-        private final GupEntity gup;
+        protected final GupEntity gup;
 
         public GupKeepOnJumpingGoal(GupEntity gup) {
             this.gup = gup;
@@ -133,8 +133,8 @@ public class GupEntity extends Mob implements Enemy {
     }
 
     static class GupAttackGoal extends Goal {
-        private final GupEntity gup;
-        private int growTiredTimer;
+        protected final GupEntity gup;
+        protected int growTiredTimer;
 
         public GupAttackGoal(GupEntity gup) {
             this.gup = gup;
@@ -183,10 +183,10 @@ public class GupEntity extends Mob implements Enemy {
     }
 
     static class GupMoveControl extends MoveControl {
-        private float yRot;
-        private int jumpDelay;
-        private final GupEntity gup;
-        private boolean isAggressive;
+        protected float yRot;
+        protected int jumpDelay;
+        protected final GupEntity gup;
+        protected boolean isAggressive;
 
     public GupMoveControl(GupEntity gup) {
         super(gup);
@@ -236,9 +236,9 @@ public class GupEntity extends Mob implements Enemy {
     }
 
     static class GupRandomDirectionGoal extends Goal {
-        private final GupEntity gup;
-        private float chosenDegrees;
-        private int nextRandomizeTime;
+        protected final GupEntity gup;
+        protected float chosenDegrees;
+        protected int nextRandomizeTime;
 
         public GupRandomDirectionGoal(GupEntity gup) {
             this.gup = gup;
