@@ -13,6 +13,10 @@
 
   "block.assessmentmod.simulacrum_ground": "Simulacrum Ground",
 
+  "entity.assessmentmod.gup": "Gup",
+
   "creativetab.assessmentmod.assessment_items": "Assessment Items",
   "creativetab.assessmentmod.assessment_blocks": "Assessment Blocks"
+
+
 }
