@@ -9,6 +9,7 @@ import net.thatancient2.assessmentprototypemod.block.ModBlocks;
 import net.thatancient2.assessmentprototypemod.entity.ModEntities;
 import net.thatancient2.assessmentprototypemod.item.ModCreativeModeTabs;
 import net.thatancient2.assessmentprototypemod.item.ModItems;
+import net.thatancient2.assessmentprototypemod.loot.ModLootModifiers;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -30,6 +31,9 @@ public class AssessmentMod {
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public AssessmentMod(IEventBus modEventBus, ModContainer modContainer) {
+
+        //funny logger
+        LOGGER.info("There are gups in your game file- WE ARE THE GUPLINGS PLEASE FEED US");
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -43,6 +47,8 @@ public class AssessmentMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
