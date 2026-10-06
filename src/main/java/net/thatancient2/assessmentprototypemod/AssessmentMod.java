@@ -33,7 +33,7 @@ public class AssessmentMod {
     public AssessmentMod(IEventBus modEventBus, ModContainer modContainer) {
 
         //funny logger
-        LOGGER.info("There are gups in your game file- WE ARE THE GUPLINGS PLEASE FEED US");
+        LOGGER.info("There are Gups in your game file- WE ARE THE GUPLINGS PLEASE FEED US");
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
